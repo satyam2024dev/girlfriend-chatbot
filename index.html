@@ -1,69 +1,17 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#17131b" />
-  <title>Sunday — your fictional AI companion</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="profile.css" />
-</head>
-<body>
-  <main class="app-shell">
-    <aside class="side-panel">
-      <a class="brand" href="#" aria-label="Sunday home"><span class="brand-mark">s</span><span>sunday</span></a>
-      <div class="side-label">YOUR SPACE</div>
-      <button class="new-chat" id="newChat"><span>＋</span> New conversation</button>
-      <div class="side-label recent-label">RECENT</div>
-      <button class="history-item active"><span class="history-dot"></span> A little check-in</button>
-      <div class="side-bottom">
-        <div class="privacy-card"><span class="lock-icon">⌑</span><div><strong>Your space, your pace</strong><p>This is a fictional AI companion. You’re always in control.</p></div></div>
-        <button class="profile" id="profileButton" type="button"><span class="avatar-mini" id="profileAvatar">Y</span><span><strong id="profileLabel">Your profile</strong><small id="profileSummary">Add a little about you</small></span><span class="more">···</span></button>
-      </div>
-    </aside>
-
-    <section class="chat-area">
-      <header class="topbar">
-        <div class="companion-heading"><div class="avatar-wrap"><div class="avatar">S</div><i class="online"></i></div><div><h1>Sunday</h1><p><span class="status-dot"></span> Here for a chat <span class="separator">·</span> AI companion</p></div></div>
-        <button class="menu-button" id="optionsButton" aria-label="Conversation options" aria-expanded="false">···</button>
-      </header>
-
-      <div class="notice"><span>✦</span> Sunday is a fictional AI companion, not a real person. Be kind to yourself here.</div>
-
-      <div class="conversation" id="conversation" aria-live="polite">
-        <div class="day-divider"><span></span><small>TODAY</small><span></span></div>
-        <div class="intro"><div class="intro-sparkle">✳</div><h2>A softer part of your day.</h2><p>Drop in, tell me what’s on your mind, or just say hello.<br />I’m happy to keep you company.</p></div>
-        <div class="message-row theirs"><div class="message-avatar">S</div><div><div class="bubble">Hey, you made it. 😊 How’s your day treating you so far?</div><time>Just now</time></div></div>
-      </div>
-
-      <div class="composer-wrap">
-        <div class="suggestions" id="suggestions"><button>Sign language app kaise banayein?</button><button>VS Code mein Codex use karta hoon</button><button>Kal continue karenge</button></div>
-        <form class="composer" id="chatForm"><textarea id="messageInput" rows="1" placeholder="Message Sunday…" aria-label="Message Sunday"></textarea><div class="composer-footer"><span><span class="sparkle">✦</span> A little space to be yourself</span><button class="send-button" id="sendButton" type="submit" aria-label="Send message">↑</button></div></form>
-        <p class="disclaimer">Sunday can get things wrong. This chat is for companionship, not professional advice.</p>
-      </div>
-    </section>
-  </main>
-  <div class="modal-backdrop" id="profileModal" hidden>
-    <section class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="profileTitle">
-      <button class="modal-close" id="closeProfile" type="button" aria-label="Close">×</button>
-      <div class="modal-sparkle">✳</div>
-      <h2 id="profileTitle">A little about you</h2>
-      <p class="modal-copy">Share only what you’re comfortable with. Sunday uses these details to make this chat feel more personal.</p>
-      <form id="profileForm">
-        <label for="profileName">What should Sunday call you?</label>
-        <input id="profileName" name="name" maxlength="40" placeholder="Your name or nickname" />
-        <label for="profileInterests">What do you enjoy?</label>
-        <textarea id="profileInterests" name="interests" rows="2" maxlength="240" placeholder="Music, films, football, baking…"></textarea>
-        <label for="profileNotes">Anything else you’d like Sunday to know?</label>
-        <textarea id="profileNotes" name="notes" rows="3" maxlength="400" placeholder="Your goals, favorite things, or how you like to be supported…"></textarea>
-        <div class="privacy-note">⌑ Saved only in this browser. You can edit or clear it any time.</div>
-        <div class="modal-actions"><button class="clear-profile" id="clearProfile" type="button">Clear details</button><button class="save-profile" type="submit">Save details</button></div>
-      </form>
-    </section>
-  </div>
-  <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17121c" />
+    <meta name="description" content="Sunday is a fictional AI girlfriend for warm, thoughtful conversation." />
+    <title>Sunday — your fictional AI girlfriend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&family=Lora:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
