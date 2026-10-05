@@ -1,4 +1,4 @@
-# Sunday Companion
+
 
 A full-stack fictional AI girlfriend chat built with React, Vite, Express, MongoDB, and the OpenAI Responses API. The backend also has local replies for development when no OpenAI key is configured.
 
